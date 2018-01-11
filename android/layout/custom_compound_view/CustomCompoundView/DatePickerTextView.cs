@@ -6,9 +6,11 @@ using Android.OS;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Android.Runtime;
 
 namespace com.xamarin.recipes.customcompoundview
 {
+    [Register("com.xamarin.recipes.compositecontrol.DatePickerTextView")]
     public class DatePickerTextView : LinearLayout
     {
         public EventHandler<DatePickerTextViewChangedArgs> DateChanged = (sender, e) => { };
